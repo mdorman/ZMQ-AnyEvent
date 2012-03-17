@@ -1,0 +1,5 @@
+* Add write queueing
+
+Adding a write watcher on sockets that include the Sender role would
+allow us to queue on our end and only send when the socket is ready.
+Could be better for insuring no surprising latencies.
